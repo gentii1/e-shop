@@ -1,8 +1,9 @@
 import React from 'react'
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 //Components
-// import { ProductBox } from '../../components/ProductBox/ProductBox';
+import { ProductBox } from '../../components/ProductBox/ProductBox';
 
 //styles
 import './Home.scss'
@@ -10,6 +11,8 @@ import './Home.scss'
 import banner1 from './../../assets/images/banner1.jpg'
 import banner2 from './../../assets/images/banner2.jpg'
 import banner3 from './../../assets/images/banner3.jpg'
+import medium1 from './../../assets/images/medium1.jpg'
+import medium2 from './../../assets/images/medium2.jpg'
 
 import product1 from './../../assets/images/product1.jpg'
 
@@ -28,7 +31,7 @@ const SliderFavorite = {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4
+    slidesToScroll: 2,
 };
 
 export const Home = () => {
@@ -62,87 +65,119 @@ export const Home = () => {
                     </div>
                 </Slider>
             </section>
+            <section className="block_section medium_boxes">
+                <div className="container">
+                    <div className="row has_gutter">
+                        <div className="column-6">
+                            <div className="box_medium">
+                                <img src={medium1} alt="medium1" />
+                                <div className="box_medium__content">
+                                    <h4>New arrivals are now in!</h4>
+                                    <Link className='link' to="/">Show collection</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="column-6">
+                            <div className="box_medium">
+                                <img src={medium2} alt="medium2" /> 
+                                <div className="box_medium__content">
+                                    <h4>Basic t-shirts $29,99</h4>
+                                    <Link className='link' to="/">More details</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
             <section className="block_section favorite_section">
                 <div className="container">
                     <div className="main_title">
-                        <h4>Your Favorite</h4>
+                        <h4>Selected just for you</h4>
                     </div>
                     <div className="favorite_slider">
                         <Slider {...SliderFavorite}>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="29.99"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="19.99"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="15.39"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="12.96"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="34.39"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="22.09"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="3.99"
                                     image={product1}
                                 />
                             </div>
-                            <div className="fav_product_slider_item">
+                            <div className="favorite_slider_item">
                                 <ProductBox
                                     id="1"
                                     isBig
-                                    title="Basic Slim Fit T-Shirt"
-                                    price="79.99"
+                                    title="Nutella"
+                                    price="9.99"
                                     image={product1}
                                 />
                             </div>
                         </Slider>
                     </div>
+                </div>
+            </section>
+            <section className="block_section subscribe_section">
+                <div className="subscribe_wrapp">
+                    <h2>
+                    Subscribe to our newsletter and receive exclusive offers every week
+                    </h2>
                 </div>
             </section>
         </div>

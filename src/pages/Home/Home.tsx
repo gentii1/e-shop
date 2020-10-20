@@ -13,6 +13,7 @@ import banner2 from './../../assets/images/banner2.jpg'
 import banner3 from './../../assets/images/banner3.jpg'
 import medium1 from './../../assets/images/medium1.jpg'
 import medium2 from './../../assets/images/medium2.jpg'
+import subscribe from './../../assets/images/subscribe.jpg'
 
 import product1 from './../../assets/images/product1.jpg'
 
@@ -174,10 +175,17 @@ export const Home = () => {
                 </div>
             </section>
             <section className="block_section subscribe_section">
+                <div className="container">
                 <div className="subscribe_wrapp">
-                    <h2>
-                    Subscribe to our newsletter and receive exclusive offers every week
-                    </h2>
+                <img src={subscribe} alt="subscribe" /> 
+                    <div className="subscribe__content">
+                        <h2>Subscribe to our newsletter and receive exclusive offers every week</h2>
+                        <div className="subscribe_input">
+                            <input type="text" placeholder="enter your email" />
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </section>
         </div>

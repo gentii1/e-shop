@@ -6,12 +6,12 @@ import {
 } from "react-router-dom";
 
 //Components
-import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
 
 //Pages
 import { Home } from './pages/Home/Home';
-import { Contact } from './pages/Contact/Contact';
+import { Product } from './pages/Product/Product';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 
 //Styles
@@ -24,7 +24,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/Product" component={Product} />
           <Route component={ErrorPage} />
         </Switch>
         <Footer />

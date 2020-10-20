@@ -25,9 +25,13 @@
   }
   a {
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     font-weight:600;
+    &:hover{
+      transition: all 0.3s;
+      color: #FBB03B;
+    }
   }
 }

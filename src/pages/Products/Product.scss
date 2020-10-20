@@ -1,0 +1,35 @@
+.Product_wrapp{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 153px;
+}
+.Product__thumb{
+    width: 601px;
+    margin-right: 112px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.Product__content{
+    width: 100%;
+    max-width: 460px;
+    h2{
+        font-size: 30px;
+        font-weight: 300;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    span{
+        font-size: 30px;
+        font-weight: 400;
+        color: #000000;
+    }
+    p{
+        color: #7D7D7D;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 23px;
+    }
+}

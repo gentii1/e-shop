@@ -5,13 +5,11 @@ import {
   Route
 } from "react-router-dom";
 
-//Components
-import { Header } from './components/Header/Header';
-import { Footer } from './components/Footer/Footer';
+
 
 //Pages
 import { Home } from './pages/Home/Home';
-import { Product } from './pages/Product/Product';
+import { Products } from './pages/Products/Products';
 import { ErrorPage } from './pages/ErrorPage/ErrorPage';
 
 //Styles
@@ -21,13 +19,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Product" component={Product} />
+          <Route exact path="/Product" component={Products} />
           <Route component={ErrorPage} />
         </Switch>
-        <Footer />
       </Router>
     </div>
   );

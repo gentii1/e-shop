@@ -1,14 +1,14 @@
-import React from 'react';
+import React from 'react'
 import { Link } from "react-router-dom";
 
-import logo from './../../assets/images/logo-white.svg';
+import logo from './../../assets/images/footerlogo.svg';
 
 //styles
-import "./Header.scss"
+import "./SecondHeader.scss"
 
-export const Header = () => {
+export const SecondHeader = () => {
     return (
-        <div className="Header">
+        <div className="SecondHeader">
             <div className="container">
                 <div className="Header__wrap">
                     <Link to="/">

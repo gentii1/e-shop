@@ -37,6 +37,7 @@ const SliderFavorite = {
     slidesToScroll: 2,
 };
 
+
 export const Home = () => {
     return (
         <div className="Home">

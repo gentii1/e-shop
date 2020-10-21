@@ -1,14 +1,15 @@
 import React from 'react'
 import Slider from "react-slick";
+//Components
 import { Footer } from '../../components/Footer/Footer'
 import { SecondHeader } from '../../components/SecondHeader/SecondHeader'
-// import { Slider_products } from '../../components/Slider_products/Slider_products'
 import { Subscribe } from '../../components/Subscribe/Subscribe'
 import { ProductBox } from '../../components/ProductBox/ProductBox';
 
+//Img
 import Fastfood from './../../assets/images/Fast.jpg'
 import product1 from './../../assets/images/product1.jpg'
-
+//Style
 import './Product.scss'
 
 const SliderFavorite = {
@@ -19,6 +20,7 @@ const SliderFavorite = {
     slidesToShow: 4,
     slidesToScroll: 2,
 };
+
 
 export const Products = () => {
     return (

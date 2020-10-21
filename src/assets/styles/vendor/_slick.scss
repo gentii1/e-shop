@@ -156,11 +156,11 @@
   left: auto;
 }
 .slick-prev:before {
-  content: '←';
+  content: url(./../../images/leftarr.svg);
 }
 .slick-next:before,
 [dir='rtl'] .slick-prev:before {
-  content: '→';
+  content: url(./../../images/rightarr.svg);
 }
 .slick-next {
   right: -25px;

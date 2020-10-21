@@ -1,6 +1,29 @@
 .ErrorPage {
   width: 100%;
+  background-image: url(./../../assets/images/error.jpg);
+  height: 100vh;
+  .error_wrapp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+  }
+  .error__tittle{
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 70px;
+    border-radius: 50px;
+    &:hover{
+      transition: all 0.3s;
+    }
+  }
   h1 {
-    color: red;
+    padding: 20px;
+    font-size: 50px;
+  }
+  span{
+    position: absolute;
+    font-size: 50px;
+    color:inherit
   }
 }
